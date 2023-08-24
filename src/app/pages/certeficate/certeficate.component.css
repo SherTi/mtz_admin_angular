@@ -1,0 +1,68 @@
+.form_block{
+  margin-bottom: 30px;
+}
+.title_info{
+  color: #222222;
+  font-size: 20px;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  user-select: none;
+}
+.file_select_block{
+  width: 100%;
+  background: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  height: 54px;
+  padding: 4px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cccccc;
+}
+.file_select_block:active{
+  border: 1px solid #0a1f3d;
+}
+.add_photo{
+  width: 30px;
+  height: 30px;
+  background: url("/assets/img_iconefault.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  overflow: hidden;
+  cursor: pointer;
+}
+.file_select{
+  opacity: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.info_des{
+  font-size: 16px;
+  color: #222222;
+  margin-left: 15px;
+}
+.add_data_block{
+  display: flex;
+  justify-content: flex-end;
+}
+.add_data{
+  text-align: center;
+  padding: 14px 20px;
+  background: #0a1f3d;
+  border-radius: 16px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+}
+.add_data:hover{
+  background:#ffffff;
+  border: 1px solid #cccccc;
+  color: #0a1f3d;
+  box-shadow: 1px 1px 10px #0a1f3d;
+}

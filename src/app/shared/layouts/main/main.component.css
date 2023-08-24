@@ -1,0 +1,86 @@
+
+.logo {
+  height: 140px;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.link_block{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.link_item{
+  border-radius: 16px;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  margin-right: 15px;
+  margin-top: 40px;
+}
+.active_link{
+  background: #728291;
+}
+.active_text{
+  color: #ffffff;
+  transition: all .1ms;
+}
+.active_icon{
+  fill: #ffffff;
+  transition: all .1ms;
+}
+.link_text{
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #0a1f3d;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .1ms;
+}
+.message{
+  background: #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+}
+.message_icon{
+  width: 20px;
+  height: 20px;
+  fill: #0a1f3d;
+}
+.message:hover {
+  border: 1px solid #cccccc;
+  background: #0a1f3d;
+  box-shadow: 1px 1px 10px #ffffff;
+}
+.message:hover .message_icon{
+  fill: #ffffff;
+}
+.link_block_items{
+  display: flex;
+  align-items: center;
+}
+.link_icon{
+  width: 20px;
+  height: 20px;
+  fill: #0a1f3d;
+  margin-right: 15px;
+  transition: all .1ms;
+}
+
+.content{
+  margin: 40px 0  80px 0;
+  padding: 40px 15px;
+  border: 1px solid #cccccc;
+  border-radius: 16px;
+  background: #ffffff;
+}
+
