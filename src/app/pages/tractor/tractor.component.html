@@ -1,21 +1,30 @@
 <div class="form_block">
   <h1 class="title_info">Трактор</h1>
-  <div class="file_select_block">
-    <div class="add_photo">
-      <input type="file" class="file_select">
+  <label for="add" class="file_select_item">
+    <div class="file_select_block">
+      <div class="add_photo">
+        <input type="file" class="file_select" id="add">
+      </div>
+      <p class="info_des">Добавить фото</p>
     </div>
-    <p class="info_des">Добавить фото</p>
-  </div>
+  </label>
   <div class="select_model">
-    <select>
-      <option value="0">Категория </option>
-      <option value="1">Мини-техника</option>
-      <option value="2">Почвообработка</option>
-      <option value="3">Посев</option>
-      <option value="4">Внесения удобрений</option>
-      <option value="5">Защита растений</option>
-      <option value="6">Возделывание картофеля и других овощных культур</option>
-    </select>
+    <span class="select_def_text">Категория</span>
+    <button class="down_list" (click)="selectBlock = !selectBlock" [ngClass]="{active_list_category:selectBlock}">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="select_icon">
+        <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
+      </svg>
+    </button>
+  </div>
+  <div class="select_block" *ngIf="selectBlock" @select>
+    <ul>
+      <li class="select_item">Мини-техника</li>
+      <li class="select_item">Почвообработка</li>
+      <li class="select_item">Посев</li>
+      <li class="select_item">Внесения удобрений</li>
+      <li class="select_item">Защита растений</li>
+      <li class="select_item">Возделывание картофеля и других овощных культур</li>
+    </ul>
   </div>
   <input type="text" class="info_input mar_def" placeholder="Название модели">
 </div>

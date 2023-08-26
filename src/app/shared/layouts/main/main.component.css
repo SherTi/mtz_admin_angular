@@ -66,7 +66,6 @@
 }
 .link_block_items{
   display: flex;
-  align-items: center;
 }
 .link_icon{
   width: 20px;
@@ -75,7 +74,6 @@
   margin-right: 15px;
   transition: all .1ms;
 }
-
 .content{
   margin: 40px 0  80px 0;
   padding: 40px 15px;
@@ -83,4 +81,36 @@
   border-radius: 16px;
   background: #ffffff;
 }
-
+.block_icon{
+  display: flex;
+}
+.block_icon_item{
+  width: 8px;
+  height: 8px;
+  background: #0a1f3d;
+  margin: 2px;
+  border-radius: 2px;
+}
+.block_icon div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.list_product{
+  display: flex;
+  align-items: flex-end;
+}
+.list_link:hover .list_line{
+  margin: 5px 0;
+  width: 15px;
+  height: 2px;
+}
+.list_btn{
+  margin: 0;
+  border-radius: 6px;
+  padding: 2px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+}

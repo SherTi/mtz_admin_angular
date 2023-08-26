@@ -11,6 +11,7 @@ import { CerteficateComponent } from './pages/certeficate/certeficate.component'
 import { ListProductComponent } from './pages/list-product/list-product.component';
 import { ChangeInfoComponent } from './pages/change-info/change-info.component';
 import { MessageComponent } from './pages/message/message.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MessageComponent } from './pages/message/message.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

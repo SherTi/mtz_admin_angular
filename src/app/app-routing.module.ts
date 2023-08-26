@@ -14,7 +14,8 @@ import {SingInComponent} from "./pages/sing-in/sing-in.component";
 const routes: Routes = [
   {
     path: "", component:MainComponent, children : [
-      {path: "", component:TractorComponent},
+      {path: "" , redirectTo: "tractor", pathMatch: "full"},
+      {path: "tractor", component:TractorComponent},
       {path: "part", component:PartComponent},
       {path: "category", component:CategoryComponent},
       {path: "certificate" , component:CerteficateComponent},
