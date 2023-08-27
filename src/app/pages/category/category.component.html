@@ -1,7 +1,10 @@
-<div class="form_block">
-  <h1 class="title_info">Категория</h1>
-  <input type="text" class="info_input mar_def" placeholder="Название категории">
-</div>
-<div class="add_data_block">
-  <button class="add_data">Добавить</button>
-</div>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div class="form_block">
+    <h1 class="title_info">Категория</h1>
+    <input type="text" class="info_input mar_def" placeholder="Название категории" formControlName="nameCategory" [ngClass]="{error_string:form.get('nameCategory')?.invalid && form.get('nameCategory')?.touched}">
+    <span class="error_text" *ngIf="form.get('nameCategory')?.invalid && form.get('nameCategory')?.touched">{{form.get('nameCategory')?.errors!["nameCategory"] ? "Поля не может быть пустым !" : ''}}</span>
+  </div>
+  <div class="add_data_block">
+    <button class="add_data" [disabled]="form.invalid" [ngClass]="{active_btn: form.valid}">Добавить</button>
+  </div>
+</form>

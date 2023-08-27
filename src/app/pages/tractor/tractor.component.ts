@@ -52,7 +52,8 @@ export class TractorComponent {
     deckKey: new FormControl(null,{validators:[Validators.required]}),
     deckValueTrans: new FormControl(null,{validators:[Validators.required]}),
     deckKeyTrans: new FormControl(null,{validators:[Validators.required]}),
-
+    deckValueStandard: new FormControl(null,{validators:[Validators.required]}),
+    deckKeyStandard: new FormControl(null, {validators:[Validators.required]})
   });
 
   templates = []
@@ -75,7 +76,13 @@ export class TractorComponent {
       formToUpload.append("image", this.file);
       formToUpload.append("name", this.form.get("name")?.value);
       formToUpload.append("category", this.form.get("category")?.value);
-      formToUpload.append("deck" , this.form.get("deck")?.value)
+      formToUpload.append("deck" , this.form.get("deck")?.value);
+      formToUpload.append('deckValue', this.form.get("deckValue")?.value);
+      formToUpload.append('deckKey', this.form.get("deckKey")?.value);
+      formToUpload.append('deckValueTrans', this.form.get("deckValueTrans")?.value);
+      formToUpload.append('deckKeyTrans', this.form.get("deckKeyTrans")?.value);
+      formToUpload.append('deckValueStandard', this.form.get("deckValueStandard")?.value);
+      formToUpload.append('deckKeyStandard', this.form.get("deckKeyStandard")?.value);
     }
   }
   addInput() {
