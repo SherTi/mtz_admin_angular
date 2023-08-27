@@ -1,0 +1,14 @@
+.info_input{
+  width: 100%;
+  font-size: 16px;
+  padding: 18px 16px ;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  border: 1px solid #cccccc ;
+}
+.info_input:focus{
+  border: 1px solid #0a1f3d;
+}
+.info_input::placeholder{
+  color: #222222;
+}

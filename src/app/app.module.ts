@@ -12,6 +12,8 @@ import { ListProductComponent } from './pages/list-product/list-product.componen
 import { ChangeInfoComponent } from './pages/change-info/change-info.component';
 import { MessageComponent } from './pages/message/message.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { InputComponent } from './shared/components/input/input.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +26,15 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     ListProductComponent,
     ChangeInfoComponent,
     MessageComponent,
+    InputComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        FormsModule,
+      ReactiveFormsModule,
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
