@@ -4,7 +4,7 @@
     <label for="certificate">
       <div class="file_select_block">
         <div class="add_photo">
-          <input type="file" class="file_select" id="certificate" (change)="onFileSelected($event)">
+          <input type="file" class="file_select" id="certificate" accept="image/png , image/jpeg" (change)="onFileSelected($event)">
         </div>
         <p class="info_des">{{file?.name || 'Добавить фото'}}</p>
       </div>

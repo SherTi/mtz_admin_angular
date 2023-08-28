@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 15px;
 }
 .link_block{
   display: flex;
@@ -24,7 +25,7 @@
   margin-top: 40px;
 }
 .active_link{
-  background: #728291;
+  background: #313d59;
 }
 .active_text{
   color: #ffffff;
@@ -113,4 +114,17 @@
   background: #ffffff;
   display: flex;
   justify-content: center;
+}
+.active_link .link_icon{
+  fill: #ffffff;
+}
+.active_link .link_text{
+  color: #ffffff;
+}
+.active_btn{
+  background: #313d59;
+  border: 1px solid #ffffff;
+}
+.active_btn .block_icon_item{
+  background: #ffffff;
 }

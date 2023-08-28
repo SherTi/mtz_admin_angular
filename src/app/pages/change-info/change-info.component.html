@@ -3,7 +3,7 @@
   <label for="logo">
     <div class="file_select_block">
       <div class="add_photo">
-        <input type="file" class="file_select" id="logo" (change)="onFileSelected($event)">
+        <input type="file" class="file_select" id="logo" accept="image/png , image/jpeg" (change)="onFileSelected($event)">
       </div>
       <p class="info_des">{{file?.name || "Добавить логотип партнёров"}}</p>
     </div>
@@ -11,7 +11,7 @@
   <label for="photo">
     <div class="file_select_block">
       <div class="add_photo">
-        <input type="file" class="file_select" id="photo" (change)="onFileChange($event)">
+        <input type="file" class="file_select" id="photo" accept="image/png , image/jpeg" (change)="onFileChange($event)">
       </div>
       <p class="info_des">{{fileSupply?.name || "Добавить фото в раздел \"Мы поставляем\""}}</p>
     </div>
@@ -22,7 +22,7 @@
  <label for="employees">
    <div class="file_select_block">
      <div class="add_photo">
-       <input type="file" class="file_select" id="employees" (change)="onFileChangeEmployers($event)">
+       <input type="file" class="file_select" id="employees" accept="image/png , image/jpeg" (change)="onFileChangeEmployers($event)">
      </div>
      <p class="info_des">{{fileEmployers?.name || "Добавить фото сотрудников"}}</p>
    </div>
