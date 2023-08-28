@@ -51,18 +51,20 @@
 .add_data{
   text-align: center;
   padding: 14px 20px;
-  background: #0a1f3d;
+  background:#ffffff;
   border-radius: 16px;
-  border: 1px solid transparent;
+  border: 1px solid #cccccc;
   font-size: 12px;
+  opacity: 0.5;
   text-transform: uppercase;
   font-weight: 600;
-  color: #ffffff;
+  color: #0a1f3d;
   cursor: pointer;
 }
-.add_data:hover{
-  background:#ffffff;
-  border: 1px solid #cccccc;
-  color: #0a1f3d;
+.active_btn{
+  background: #0a1f3d;
+  border: 1px solid transparent;
+  color: #ffffff;
   box-shadow: 1px 1px 10px #0a1f3d;
+  opacity: 1;
 }

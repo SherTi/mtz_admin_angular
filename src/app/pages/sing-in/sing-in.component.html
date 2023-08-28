@@ -1,8 +1,12 @@
-<div class="sing_up_area">
-  <div class="sing_up_block">
-    <span class="title_text">Войти</span>
-    <input type="text" class="text_form_area" placeholder="Имя">
-    <input type="text" class="text_form_area" placeholder="Пароль">
-    <button class="btn_next_form">Войти</button>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div class="sing_up_area">
+    <div class="sing_up_block">
+      <span class="title_text">Войти</span>
+      <input type="text" class="text_form_area" placeholder="Имя" formControlName="name" [ngClass]="{error_string:form.get('name')?.invalid && form.get('name')?.touched}">
+      <span class="error_text" *ngIf="form.get('name')?.invalid && form.get('name')?.touched">{{form.get('name')?.errors!["required"] ? "Неправильный логин или пароль !" : ''}}</span>
+      <input type="text" class="text_form_area" placeholder="Пароль" formControlName="password" [ngClass]="{error_string:form.get('password')?.invalid && form.get('password')?.touched}">
+      <span class="error_text" *ngIf="form.get('password')?.invalid && form.get('password')?.touched">{{form.get('password')?.errors!["required"] ? "Неправильный логин или пароль !" : ''}}</span>
+      <button class="btn_next_form" [disabled]="this.form.invalid"  [ngClass]="{active_btn: this.form.valid}">Войти</button>
+    </div>
   </div>
-</div>
+</form>

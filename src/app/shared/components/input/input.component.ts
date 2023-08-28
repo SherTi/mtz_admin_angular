@@ -10,5 +10,5 @@ export class InputComponent {
 }
 
 export interface InputComponent{
-  dropDown:string;
+
 }

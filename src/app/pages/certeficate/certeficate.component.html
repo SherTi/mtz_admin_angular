@@ -1,14 +1,16 @@
-<form>
+<form [formGroup]="form" (ngSubmit)="submit()">
   <div class="form_block">
     <h1 class="title_info">Сертификат</h1>
-    <div class="file_select_block">
-      <div class="add_photo">
-        <input type="file" class="file_select">
+    <label for="certificate">
+      <div class="file_select_block">
+        <div class="add_photo">
+          <input type="file" class="file_select" id="certificate" (change)="onFileSelected($event)">
+        </div>
+        <p class="info_des">{{file?.name || 'Добавить фото'}}</p>
       </div>
-      <p class="info_des">Добавить фото</p>
-    </div>
+    </label>
   </div>
   <div class="add_data_block">
-    <button class="add_data">Добавить</button>
+    <button class="add_data" [disabled]="!file" [ngClass]="{active_btn: file}">Добавить</button>
   </div>
 </form>

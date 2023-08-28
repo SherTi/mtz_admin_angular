@@ -14,6 +14,8 @@ import { MessageComponent } from './pages/message/message.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { InputComponent } from './shared/components/input/input.component';
+import {SingInComponent} from "./pages/sing-in/sing-in.component";
+import {EditProductComponent} from "./pages/edit-product/edit-product.component";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { InputComponent } from './shared/components/input/input.component';
     ListProductComponent,
     ChangeInfoComponent,
     MessageComponent,
+    SingInComponent,
     InputComponent,
+    EditProductComponent,
   ],
     imports: [
         BrowserModule,
